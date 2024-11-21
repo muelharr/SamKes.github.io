@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.medical {
+    width: 50px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .card img {
+    margin-bottom: 10px;
+  }
+  .card-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .container {
+    flex: 1;
+  }
+
+  footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 50vmax;
+}
+  
+ @media (max-width: 768px) {
+    .card {
+        max-width: 90%;
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+ }
+
+ @media (max-width: 480px) {
+    footer {
+        height: 40px;
+    }
+
+    .card-title {
+        font-size: 10px;
+    }
+ }
