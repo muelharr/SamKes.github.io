@@ -1,13 +1,17 @@
-function openTab(event, tabId) {
-  // Hide all tab contents
-  const contents = document.querySelectorAll('.tab-content');
-  contents.forEach(content => content.classList.remove('active'));
-
-  // Remove active class from all buttons
-  const buttons = document.querySelectorAll('.tab-button');
-  buttons.forEach(button => button.classList.remove('active'));
-
-  // Show the selected tab and highlight its button
-  document.getElementById(tabId).classList.add('active');
-  event.currentTarget.classList.add('active');
-}
+function handleRegister() {
+    const nama = document.getElementById("nama").value;
+    const email = document.getElementById("email").value;
+  
+    // Validasi jika form kosong
+    if (!nama || !email) {
+      alert("Harap isi semua data sebelum mendaftar!");
+      return;
+    }
+  
+    // Menampilkan pesan terima kasih
+    alert(`Terima kasih telah mendaftar, ${nama}!`);
+    
+    // Mengosongkan form setelah berhasil
+    document.getElementById("registerForm").reset();
+  }
+  
